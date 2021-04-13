@@ -1,0 +1,144 @@
+.machine {
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+}
+
+.machine__draw-btn {
+  align-self: center;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 2px solid var(--color-green);
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--color-green);
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: all 0.2s ease-out;
+}
+
+.machine__draw-btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-dark);
+}
+
+.machine__wrapper {
+  display: grid;
+  grid-template-rows: auto 250px;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.machine__add,
+.machine__quotation-text {
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.machine__add {
+  grid-row: 2;
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.machine__add.expanded {
+  height: 250px;
+}
+
+.machine__form-container {
+  height: 0px;
+}
+
+.machine__add h3 {
+  cursor: pointer;
+  transition: text-shadow 0.2s ease-out;
+}
+
+.machine__add h3:hover {
+  text-shadow: 0 0 1px whitesmoke;
+}
+
+.machine__quotation-text p {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  font-size: 1.4rem;
+  min-height: 10rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.machine__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.machine__form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.machine__form input,
+.machine__form textarea {
+  padding: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-light);
+}
+
+.machine__form input[type="submit"] {
+  color: var(--color-green);
+  background-color: transparent;
+  border: 2px solid var(--color-green);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.machine__form input[type="submit"]:hover {
+  background-color: var(--color-green);
+  color: var(--color-dark);
+}
+
+.machine__add h3 {
+  margin-bottom: 1rem;
+}
+
+.machine__add h3 i {
+  margin-right: 0.7rem;
+}
+
+.machine__form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.machine__form-box.anime,
+.machine__form-box.character {
+  width: 50%;
+}
+
+.machine__form-box.anime {
+  margin-right: 1rem;
+}
+
+.machine__form-box span {
+  font-size: 1.2rem;
+  color: #F07178;
+  padding: 0.3rem 0.5rem;
+  margin-top: 2px;
+}
+
+

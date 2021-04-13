@@ -1,0 +1,11 @@
+blockquote {
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+cite {
+  color: orange;
+}
